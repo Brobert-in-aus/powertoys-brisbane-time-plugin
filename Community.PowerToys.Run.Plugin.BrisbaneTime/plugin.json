@@ -1,0 +1,14 @@
+{
+  "ID": "22E808316AB24D96B3D4BE8FF098DAA5",
+  "ActionKeyword": "bt",
+  "IsGlobal": false,
+  "Name": "Brisbane Time",
+  "Author": "Robert",
+  "Version": "0.1.0",
+  "Language": "csharp",
+  "Website": "https://github.com/robert/Community.PowerToys.Run.Plugin.BrisbaneTime",
+  "ExecuteFileName": "Community.PowerToys.Run.Plugin.BrisbaneTime.dll",
+  "IcoPathDark": "Images\\brisbanetime.dark.png",
+  "IcoPathLight": "Images\\brisbanetime.light.png",
+  "DynamicLoading": false
+}
