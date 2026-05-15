@@ -318,14 +318,14 @@ internal static class BrisbaneTimeConverter
             return relativeDate;
         }
 
-        if (TryExtractWeekday(ref input, fallback, out var weekdayDate))
-        {
-            return weekdayDate;
-        }
-
         if (TryExtractAbsoluteDate(ref input, fallback, out var absoluteDate))
         {
             return absoluteDate;
+        }
+
+        if (TryExtractWeekday(ref input, fallback, out var weekdayDate))
+        {
+            return weekdayDate;
         }
 
         return fallback;

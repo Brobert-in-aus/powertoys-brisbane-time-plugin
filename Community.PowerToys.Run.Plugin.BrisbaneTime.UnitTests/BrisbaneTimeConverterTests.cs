@@ -127,6 +127,16 @@ public sealed class BrisbaneTimeConverterTests
     }
 
     [TestMethod]
+    public void Convert_handles_weekday_absolute_date_before_time()
+    {
+        var results = BrisbaneTimeConverter.Convert("Saturday, 16 May 2026, at 15:00 CEST", MayUtc);
+
+        Assert.AreEqual(1, results.Count);
+        Assert.AreEqual("11:00 PM Brisbane time", results[0].Title);
+        StringAssert.Contains(results[0].Subtitle, "Sat 16 May, 3:00 PM CEST");
+    }
+
+    [TestMethod]
     public void Convert_reports_missing_timezone()
     {
         var results = BrisbaneTimeConverter.Convert("10:30 PM", MayUtc);
